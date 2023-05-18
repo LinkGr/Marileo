@@ -1,0 +1,125 @@
+@import url(../fontes/LEMONMILK-Medium.otf);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --30percent: #c2ae64;
+    --60percent: #cfbb82;
+    --10percent: #2f2d16;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+    padding: 10px 25px;
+
+    background-color: var(--60percent);
+    font-family: 'Lemon milk', Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 500px;
+    height: 50%;
+}
+header>img {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 0px 10px;
+    width: 100%;
+    max-width: 500px;
+    height: 50%;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    
+}
+main > a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 500px;
+    height: 20%;
+    text-decoration: none;
+    border-radius: 100vw;
+    
+    background: var(--30percent);
+    color: var(--10percent);
+    box-shadow: rgba(93, 74, 50, 0.25) 0px 6px 12px -2px, rgba(36, 35, 13, 0.3) 0px 3px 7px -3px;
+
+    transition: 200ms;
+}
+main > a:hover {
+    background: #dac373;
+    scale: 1.05;
+}
+main > a img {
+    position: absolute;
+    left: 0;
+
+    height: 65%;
+
+    margin-left: 15px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: lighter;
+}
+footer a {
+    animation: gradient-text 3s linear infinite;
+    text-decoration: none;
+    background: linear-gradient(to right, #e100f5, #7c6bff, #0fff83, #f50097);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+
+    font-weight: bold;
+}
+@keyframes gradient-text {
+    0% {
+      background-position: 0% center;
+      top: 0%;
+    }
+  
+    50% {
+      background-position: -100% center;
+      top: 3%;
+    }
+  
+    100% {
+      background-position: -200% center;
+      top: 0%;
+    }
+  }
