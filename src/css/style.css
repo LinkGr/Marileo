@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Lemon Milk;
+    font-family: 'Lemon Milk';
     src: url(../fontes/LEMONMILK-Regular.otf);
 }
 
@@ -16,7 +16,7 @@
 
 html {
     font-size: 18px;
-    font-family: Lemon Milk;
+    font-family: 'Lemon Milk';
 }
 
 body {
