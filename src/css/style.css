@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 :root {
-    --30percent: #c2ae64;
-    --60percent: #cfbb82;
+    --30percent: #cfbb72;
+    --60percent: #e0cd97;
     --10percent: #2f2d16;
 }
 
@@ -23,6 +23,7 @@ body {
 
     width: 100%;
     height: 100vh;
+    max-height: 100vh;
     padding: 10px 25px;
 
     background-color: var(--60percent);
@@ -52,8 +53,9 @@ main {
     justify-content: space-evenly;
 
     padding: 0px 10px;
-    width: 100%;
-    max-width: 500px;
+    max-width:500px;
+    width: 50%;
+    min-width: max-content;
     height: 50%;
     letter-spacing: 1px;
     font-size: 1.1rem;
@@ -66,10 +68,10 @@ main > a {
     align-items: center;
 
     width: 100%;
-    max-width: 500px;
     height: 20%;
     text-decoration: none;
     border-radius: 100vw;
+    padding: 0 60px 0 60px;
     
     background: var(--30percent);
     color: var(--10percent);
