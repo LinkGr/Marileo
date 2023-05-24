@@ -1,4 +1,7 @@
-@import url(../fontes/LEMONMILK-Medium.otf);
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url(../fontes/LEMONMILK-Regular.otf);
+}
 
 * {
     margin: 0;
@@ -13,6 +16,7 @@
 
 html {
     font-size: 18px;
+    font-family: 'Lemon Milk';
 }
 
 body {
@@ -27,7 +31,7 @@ body {
     padding: 10px 25px;
 
     background-color: var(--60percent);
-    font-family: 'Lemon milk', Helvetica, sans-serif;
+    
 }
 
 header {
